@@ -1,0 +1,50 @@
+@model Customer
+
+@{
+    ViewData["Title"] = "Batteries";
+    var k = ViewBag.batteries;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Batteries</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <table id="productTable" class="table table-bordered table-condensed table-striped">
+                <thead>
+                    <tr>
+                        <th>Battery ID</th>
+                        <th>Battery Type</th>
+                        <th>Battery Status</th>
+                        <th>Date of Commissioning</th>
+                        <th>Date of Last Inspection</th>
+                        <th>Certificate of Operations</th>
+                        <th>Information</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @* // Will use the ViewBag method to get each of the following component *@
+                    @foreach(var battery in k )
+                        {
+                            <tr>
+                                <td>@battery.Id</td>
+                                <td>@battery.batteryType</td>
+                                <td>@battery.batteryStatus</td>
+                                <td>@battery.dateOfCommissioning</td>
+                                <td>@battery.dateOfLastInspection</td>
+                                <td>@battery.certificateOfOperations</td>
+                                <td>@battery.information</td>
+                                <td>@battery.notes</td>
+                            </tr>
+                        }
+                </tbody>   
+            </table>
+        </div>
+    </div>
+</div>
+    

@@ -1,11 +1,17 @@
 ﻿using System;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Rocket_Elevators_Customer_Portal.Models;
+
+
+
 
 namespace Rocket_Elevators_Customer_Portal.Controllers
 {
@@ -22,6 +28,37 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
         {
             return View();
         }
+  
+
+        public IActionResult intervention_form()
+        {
+            return View();
+        } 
+
+        public IActionResult buildings()
+        {
+            return View();
+        }    
+
+        public IActionResult batteries()
+        {
+            return View();
+        }    
+
+        public IActionResult columns()
+        {
+            return View();
+        }    
+
+        public IActionResult elevators()
+        {
+            return View();
+        } 
+
+        public IActionResult interventions_view()
+        {
+            return View();
+        }         
 
         public IActionResult Privacy()
         {
@@ -33,5 +70,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        
+
     }
 }

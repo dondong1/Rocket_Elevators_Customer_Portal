@@ -1,0 +1,50 @@
+    <!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Buildings</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item">@Html.ActionLink("Intervention","intervention_form")</li>
+                       
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <header class="text-center mb-60 mt-40">
+        <br />
+        <h2>Your Columns</h2>
+        <hr />
+    </header>
+
+    <div class="container">
+        <table id="tableCol" class="table table-stripped">
+            <thead class="bg-primary">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Battery ID</th>
+                    <th scope="col">Column Type</th>
+                    <th scope="col">Column Status</th>
+                    <th scope="col">Number of Floors Served</th>
+                    <th scope="col">Information</th>
+                    <th scope="col">Created At</th>
+                    <th scope="col">Updated At</th>
+                </tr>
+            </thead>
+            <tbody id="columnsData">
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+    <script src="~/js/ajax-calls.js"></script>

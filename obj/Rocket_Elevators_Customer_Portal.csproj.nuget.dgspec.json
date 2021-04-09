@@ -1,25 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/c/Users/Don/ASPNET/Rocket_Elevators_Customer_Portal/Rocket_Elevators_Customer_Portal.csproj": {}
+    "C:\\Users\\Don\\consolidation\\Rocket_Elevators_Customer_Portal\\Rocket_Elevators_Customer_Portal.csproj": {}
   },
   "projects": {
-    "/mnt/c/Users/Don/ASPNET/Rocket_Elevators_Customer_Portal/Rocket_Elevators_Customer_Portal.csproj": {
+    "C:\\Users\\Don\\consolidation\\Rocket_Elevators_Customer_Portal\\Rocket_Elevators_Customer_Portal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/Don/ASPNET/Rocket_Elevators_Customer_Portal/Rocket_Elevators_Customer_Portal.csproj",
+        "projectUniqueName": "C:\\Users\\Don\\consolidation\\Rocket_Elevators_Customer_Portal\\Rocket_Elevators_Customer_Portal.csproj",
         "projectName": "Rocket_Elevators_Customer_Portal",
-        "projectPath": "/mnt/c/Users/Don/ASPNET/Rocket_Elevators_Customer_Portal/Rocket_Elevators_Customer_Portal.csproj",
-        "packagesPath": "/home/don/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/Don/ASPNET/Rocket_Elevators_Customer_Portal/obj/",
+        "projectPath": "C:\\Users\\Don\\consolidation\\Rocket_Elevators_Customer_Portal\\Rocket_Elevators_Customer_Portal.csproj",
+        "packagesPath": "C:\\Users\\Don\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Don\\consolidation\\Rocket_Elevators_Customer_Portal\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/home/don/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Don\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +45,42 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "System.ComponentModel": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

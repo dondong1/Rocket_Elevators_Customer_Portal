@@ -1,0 +1,73 @@
+@using Microsoft.AspNetCore.Identity
+
+@inject UserManager<IdentityUser> UserManager
+@* // This is the Intervention view *@
+@{ ViewData["Title"] = "Interventions";
+                var intmess = ViewBag.intMessage;
+                var intbatt = ViewBag.intbatteries;
+                var intcol = ViewBag.intcolumns;
+                var intelev = ViewBag.intelevators;
+                var intempl = ViewBag.intemployees; }
+
+<header class="text-center mb-60 mt-40">
+    <br />
+    <h2>New Intervention Request</h2>
+    <hr />
+</header>
+
+<div class="row">
+    <!-- FORM -->
+    <div class="container col-5 mb-5 text-center">
+        <form action="/interventions" method="POST" enctype="multipart/form-data" id="intForm">
+
+            <br />
+            <br />
+            <label for="building_id" class="bg-danger text-white" id="build_label">Select Building</label>
+            <br />
+            <select id="select_build">
+            </select>
+            <br />
+            <br />
+            <label for="battery_id" class="bg-danger text-white" id="bat_label">Select Battery</label>
+            <br />
+            <select id="select_bat">
+            </select>
+            <br />
+            <br />
+            <label for="column_id" class="bg-danger text-white" id="col_label">Select Column</label>
+            <br />
+            <select id='select_col'>
+            </select>
+            <br />
+            <br />
+            <label for="elevator_id" class="bg-danger text-white" id="elev_label">Select Lift</label>
+            <br />
+            <select id="select_elev">
+            </select>
+            <br />
+            <br />
+            <label for="report">Intervention Description</label>
+            <input required type="text" value="" class="form-control" name="report" id="descrFrm">
+            <!--Hidden field to get current_user_id-->
+            <input name="author" id="current_author" class="d-none" value="">
+            <br />
+            <button type="submit" class="btn btn-danger" id="btnInter" style="background-color:#EB2C55;"><i class="fa fa-check"></i>SUBMIT</button>
+        </form>
+
+        <p id='customer-id-p' class="d-nonde"></p>
+
+    </div>
+</div>
+
+<!---TEST SECTION AJAX CALL API-->
+<p id="test"></p>
+
+<script src="~/js/intervention-form.js"></script>
+
+<!---/TEST SECTION AJAX CALL API-->
+<!-- jQuery -->
+<script src="~/js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="~/js/adminlte.min.js"></script>
